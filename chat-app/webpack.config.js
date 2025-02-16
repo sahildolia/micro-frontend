@@ -10,6 +10,7 @@ module.exports = {
     port: 3002,
   },
   output: {
+    path: path.resolve(__dirname, "dist"),
     publicPath: "auto",
   },
   module: {

@@ -13,6 +13,7 @@ module.exports = {
     port: 3003,
   },
   output: {
+    path: path.resolve(__dirname, "dist"),
     publicPath: "auto",
   },
   module: {

@@ -14,6 +14,7 @@ module.exports = {
     port: 3001,
   },
   output: {
+    path: path.resolve(__dirname, "dist"),
     publicPath: "http://localhost:3001/",
   },
   module: {
