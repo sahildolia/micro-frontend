@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "main-app/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "main-app/dist" }
+    },
+    {
+      "src": "chat-app/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "chat-app/dist" }
+    },
+    {
+      "src": "email-app/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "email-app/dist" }
+    }
+  ],
+  "routes": [
+    { "src": "/main/(.*)", "dest": "/main-app/$1" },
+    { "src": "/chat/(.*)", "dest": "/chat-app/$1" },
+    { "src": "/email/(.*)", "dest": "/email-app/$1" }
+  ]
+}
