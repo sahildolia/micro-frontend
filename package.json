@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "name": "mfe-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "concurrently \"npm start --prefix main-app\" \"npm start --prefix chat-app\" \"npm start --prefix email-app\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
