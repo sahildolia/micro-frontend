@@ -7,7 +7,8 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "concurrently \"npm start --prefix main-app\" \"npm start --prefix chat-app\" \"npm start --prefix email-app\""
+    "start": "concurrently \"npm start --prefix main-app\" \"npm start --prefix chat-app\" \"npm start --prefix email-app\"",
+    "build": "concurrently \"npm run build --prefix main-app\" \"npm run build --prefix chat-app\" \"npm run build --prefix email-app\""
   },
   "keywords": [],
   "author": "",
