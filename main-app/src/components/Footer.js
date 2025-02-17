@@ -8,7 +8,7 @@ const Footer = () => {
       <Navbar bg="dark" variant="dark" className="justify-content-center">
         <Container>
           <Navbar.Text>
-            © {new Date().getFullYear()} React-Bootstrap. All Rights Reserved.
+            © {new Date().getFullYear()} Built with passion and dedication.
           </Navbar.Text>
         </Container>
       </Navbar>

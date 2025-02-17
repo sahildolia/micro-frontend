@@ -31,6 +31,8 @@ mfe-main/
 - **Redux-based Communication** between micro-frontends.
 - **Single Command to Start All Apps** using `concurrently`.
 - **Dynamic Import and URL Configuration** for micro-apps.
+- **Interactive Chat App with real-time messaging** in chat-app.
+- **Email App with compose form and inbox** in email-app.
 
 ## How to Set Up and Run the Project
 
