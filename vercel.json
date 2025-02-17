@@ -1,10 +1,24 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "rewrites": [
+    { "source": "/chat/(.*)", "destination": "/chat-app/$1" },
+    { "source": "/email/(.*)", "destination": "/email-app/$1" },
+    { "source": "/(.*)", "destination": "/main-app/$1" }
+  ],
   "builds": [
     {
       "src": "main-app/package.json",
       "use": "@vercel/static-build",
       "config": { "distDir": "main-app/build" }
+    },
+    {
+      "src": "chat-app/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "chat-app/build" }
+    },
+    {
+      "src": "email-app/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "email-app/build" }
     }
   ]
 }
