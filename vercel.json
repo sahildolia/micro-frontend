@@ -18,8 +18,8 @@
     }
   ],
   "routes": [
-    { "src": "/main/(.*)", "dest": "/main-app/$1" },
     { "src": "/chat/(.*)", "dest": "/chat-app/$1" },
-    { "src": "/email/(.*)", "dest": "/email-app/$1" }
+    { "src": "/email/(.*)", "dest": "/email-app/$1" },
+    { "src": "/(.*)", "dest": "/main-app/$1" }
   ]
 }
